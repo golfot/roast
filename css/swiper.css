@@ -1,0 +1,34 @@
+.carousel {
+     border: 1px solid #D2D2D2;
+      overflow: hidden;
+    }
+    .carousel-inner {
+      border-radius: 15px; /* Rounded corners di bagian dalam carousel */
+      margin-bottom: 30px; /* Jarak antara carousel-inner dan carousel-indicators */
+    }
+    .carousel-item {
+      border-radius: 15px; /* Rounded corners di item carousel */
+    }
+    .carousel-indicators {
+      bottom: 0px;
+    }
+    .carousel-indicators button {
+      background-color: #000; /* Warna indikator */
+      border-radius: 10%; /* Membuat indikator menjadi bulat */
+      width: 10px; /* Ukuran indikator */
+      height: 10px; /* Ukuran indikator */
+    }
+    .carousel-indicators .active {
+      background-color: #007bff; /* Warna indikator aktif */
+    }
+    
+    .btnigs {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    color: black;
+    }
