@@ -53,6 +53,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Typed.js CSS -->
+
+    <script>
+  function trackVisitor() {
+  var xhr = new XMLHttpRequest();
+  var visitorInfo = "Platform: " + navigator.platform + ", User-Agent: " + navigator.userAgent;
+  var url = "https://script.google.com/macros/s/AKfycbz8NCQ0PMLjvi_2Ez5LHP-4_bg6EQw8D9yagR92YgqLC0nFG7vdVGvDfJl6H77sZcbCqQ/exec?action=addVisitor";
+  
+  xhr.open("GET", url + "&visitor=" + encodeURIComponent(visitorInfo), true);
+  xhr.onreadystatechange = function () {
+  if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+  console.log("Visitor data sent successfully.");
+  }
+  };
+  xhr.send();
+  }
+  
+  window.addEventListener('load', function() {
+  trackVisitor();
+  });
+  </script>
+
     
     
 </head>
